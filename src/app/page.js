@@ -6,7 +6,7 @@ import { isMobile } from 'react-device-detect'
 const Page = () => {
   return (
     <div
-      className="w-full grid place-items-center my-8 sm:my-0 bg-slate-200"
+      className="w-full grid place-items-center bg-slate-200"
       style={{
         minHeight: 'calc(100vh - 120px)' 
         // background:

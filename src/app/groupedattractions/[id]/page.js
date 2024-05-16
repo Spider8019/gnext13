@@ -97,6 +97,7 @@ export default async function page({ params }) {
 
 export async function generateMetadata({ params }) {
   const data = await groupedAtt(params.id)
+  console.log(data)
   return {
     title: data.title,
     description: data.labelForTitle,
