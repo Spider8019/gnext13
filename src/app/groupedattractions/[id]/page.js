@@ -111,7 +111,19 @@ export async function generateMetadata({ params }) {
       title: data.title,
       description: data.labelForTitle,
       type: 'article',
-      image: data.coverImage,
+      images: [
+        {
+          url: data.coverImage, // Must be an absolute URL
+          width: 800,
+          height: 600,
+        },
+        {
+          url: data.coverImage, // Must be an absolute URL
+          width: 1800,
+          height: 1600,
+          alt: 'My custom alt',
+        },
+      ],
     },
   }
 }
