@@ -88,7 +88,7 @@ export async function generateMetadata({ params }) {
   const data = await placefromacity(params.placeName)
   console.log(data)
   return {
-    title: data.placeName + " - "+data.placeCity,
+    title: data.placeName + " - "+data.placeCity+" - Checkout on ghumakkad",
     description: data.placeContent.content_1,
     icons: {
       icon: data.placeImage,
