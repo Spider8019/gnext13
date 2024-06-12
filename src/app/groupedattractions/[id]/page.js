@@ -22,7 +22,10 @@ export default async function page({ params }) {
     >
       <div className="m-4 sm:m-20 grid sm:grid-cols-2 grid-cols-1 sm:gap-20">
         <img
-          src={data.coverImage}
+          src={
+            data.coverImage ||
+            'https://i.pinimg.com/474x/8f/35/3c/8f353cf52588e3cb1fac5d07c8ab0dd1.jpg'
+          }
           alt="Cover"
           className="w-full rounded-xl bg-white sm:sticky sm:top-8"
         />
@@ -102,7 +105,9 @@ export async function generateMetadata({ params }) {
     title: data.title,
     description: data.labelForTitle,
     icons: {
-      icon: data.coverImage,
+      icon:
+        data.coverImage ||
+        'https://i.pinimg.com/474x/8f/35/3c/8f353cf52588e3cb1fac5d07c8ab0dd1.jpg',
     },
     keywords: data.attractions
       .map((item) => item.placeName)
@@ -114,7 +119,9 @@ export async function generateMetadata({ params }) {
       type: 'article',
       images: [
         {
-          url: data.coverImage, // Must be an absolute URL
+          url:
+            data.coverImage ||
+            'https://i.pinimg.com/474x/8f/35/3c/8f353cf52588e3cb1fac5d07c8ab0dd1.jpg', // Must be an absolute URL
         },
       ],
     },
