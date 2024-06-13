@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 async function groupedAtt(id) {
   let data = await fetch(
@@ -21,6 +22,16 @@ export default async function page({ params }) {
       }}
     >
       <div className="m-4 sm:m-20 grid sm:grid-cols-2 grid-cols-1 sm:gap-20">
+        {/* <Image
+          src={
+            data.coverImage ||
+            'https://i.pinimg.com/474x/8f/35/3c/8f353cf52588e3cb1fac5d07c8ab0dd1.jpg'
+          }
+          width={500}
+          height={500}
+          alt="Picture of the author"
+          className="w-full rounded-xl bg-white sm:sticky sm:top-8"
+        /> */}
         <img
           src={
             data.coverImage ||
