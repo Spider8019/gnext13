@@ -14,6 +14,20 @@ async function groupedAtt(id) {
 
 export default async function page({ params }) {
   const data = await groupedAtt(params.id)
+  
+  if (!data) {
+    return (
+      <div
+        className="w-full grid place-items-center bg-slate-200"
+        style={{
+          minHeight: 'calc(100vh - 120px)',
+        }}
+      >
+        <p>Error loading data. Please try again later.</p>
+      </div>
+    );
+  }
+
   return (
     <div
       className="w-full grid place-items-center bg-slate-200"
