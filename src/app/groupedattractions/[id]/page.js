@@ -23,7 +23,7 @@ export default async function page({ params }) {
           minHeight: 'calc(100vh - 120px)',
         }}
       >
-        <p>Error loading data. Please try again later.</p>
+        <p>Error loading data. Please try again later..</p>
       </div>
     );
   }
