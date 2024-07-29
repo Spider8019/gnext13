@@ -11,7 +11,7 @@ export const metadata = {
 }
 const Header = () => {
   return (
-    <div className="flex justify-between items-center px-4 sm:py-4 sm:px-20 bg-white shadow">
+    <div className="flex justify-between items-center px-4 sm:py-4 sm:px-20 bg-white shadow sticky top-0">
       <Link href="/">
         <img
           src="https://i.pinimg.com/736x/8f/35/3c/8f353cf52588e3cb1fac5d07c8ab0dd1.jpg"
@@ -29,7 +29,7 @@ const Header = () => {
 }
 const Footer = () => {
   return (
-    <div className="shadow px-4 sm:px-20 py-4 bg-white">
+    <div className="shadow px-4 sm:px-20 py-4 bg-white sticky bottom-0">
       <div className="flex justify-between text-gray-600">
         <p>ghumakkad</p>
         <div>
@@ -43,9 +43,9 @@ const Footer = () => {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className='h-screen flex flex-col'>
         <Header />
-        <section className='bg-slate-200'>{children}</section>
+        <section className='bg-slate-200 overflow-auto'>{children}</section>
         <Footer />
       </body>
     </html>
