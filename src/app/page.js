@@ -28,7 +28,7 @@ const Page = () => {
           />
         </div>
         <div className="text-center">
-          <p className="text-4xl my-8">ghumakkad's  </p>
+          <p className="text-4xl my-8">ghumakkad  </p>
 
           <p className="text-center">
             Embark on a journey of discovery with "ghumakkad" on the Google Play
