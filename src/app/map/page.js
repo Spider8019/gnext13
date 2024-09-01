@@ -24,7 +24,7 @@ const HeatmapPage = () => {
         "esri/layers/CSVLayer"
       ], (Map, MapView, CSVLayer) => {
 
-        const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpaRCpj1a9R1SoeZ4gr5vc83JflGzKH6VIul_mKOqSwRMgKydeRnnCfnOKu0d59bgM0IfnKsJJhQen/pub?output=csv";
+        const url = "https://docs.google.com/spreadsheets/d/1dJ8S-_U1lVaJCeWEJiSkEE_pACCvrN0WAsrqDXMoJT0/pub?output=csv";
         const colors = ["rgba(115, 0, 115, 0)", "#820082", "#910091", "#a000a0", "#af00af", "#c300c3", "#d700d7", "#eb00eb", "#ff00ff", "#ff58a0", "#ff896b", "#ffb935", "#ffea00"];
 
         const csvLayer = new CSVLayer({
